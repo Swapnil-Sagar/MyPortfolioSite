@@ -46,8 +46,8 @@ body {
 
 #particles-js {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(img/bg1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(img/bg2.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -121,6 +121,107 @@ body {
   padding-bottom: 5px;
 }
 
+.exp {
+  transform: skewY(5deg);
+}
+
+.composition {
+  position: relative;
+  transform: skewY(5deg);
+  margin-top: 15vh;
+}
+.composition__photo {
+  width: 50%;
+  -webkit-filter: drop-shadow(1px 1px 2px #222);
+  filter: drop-shadow(1px 1px 2px #222);
+  border-radius: 2px;
+  z-index: 10;
+  transition: all 0.2s;
+  position: absolute;
+}
+@media (max-width: 56.25em) {
+  .composition__photo {
+    float: left;
+    position: relative;
+    width: 28.333333%;
+  }
+}
+.composition__photo--p1 {
+  left: 66%;
+  top: 0;
+  width: 30%;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p1 {
+    top: 0;
+    left: 0;
+    width: 33%;
+  }
+}
+.composition__photo--p2 {
+  left: 50%;
+  top: 25vh;
+  width: 30%;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p2 {
+    top: 0;
+    left: 0;
+    width: 33%;
+    z-index: 100;
+  }
+}
+.composition__photo--p3 {
+  left: 15%;
+  top: 25vh;
+  width: 28%;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p3 {
+    top: 0;
+    left: 0;
+    width: 33%;
+  }
+}
+
+.composition__photo--p4 {
+  left: 0%;
+  top: 50%;
+  width: 28%;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p4 {
+    top: 0;
+    left: 0;
+    width: 33%;
+  }
+}
+
+.composition__photo--p5 {
+  left: 33%;
+  top: 50%;
+  width: 28%;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p5 {
+    top: 0;
+    left: 0;
+    width: 33%;
+  }
+}
+.composition__photo:hover {
+  transform: scale(1.1) translateY(0.2rem);
+  -webkit-filter: drop-shadow(1.5px 1.5px 4px #222);
+  filter: drop-shadow(1.5px 1.5px 4px #222);
+  z-index: 20;
+}
+
+.skill-heading {
+  text-align: center;
+  transform: skewY(5deg);
+  margin-top: 50px;
+}
+
 .col-md-6 p {
   font-size: 18px;
 }
@@ -138,7 +239,7 @@ body {
 .underline_a {
   width: 10rem;
   height: 0.4rem;
-  margin-left: 430px;
+  margin-left: auto;
   margin-bottom: 3rem;
   background: #8ab7cf;
   margin-right: auto;
@@ -147,7 +248,7 @@ body {
 .underline_p {
   width: 6rem;
   height: 0.4rem;
-  margin-left: 485px;
+  margin-left: auto;
   margin-bottom: 3rem;
   background: #8ab7cf;
   margin-right: auto;
@@ -160,11 +261,13 @@ body {
 }
 
 .navbar {
-  background-color: #000;
+  background-color: hsl(216deg 100% 95%);
+  padding: 0 !important;
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 30px;
+  margin-left: 15px;
 }
 
 .nav-bar .fa-bars {
@@ -182,39 +285,45 @@ body {
 }
 
 .nav-link {
-  color: #fff !important;
+  color: #545b62 !important;
 }
 
 .skills-bar p {
   margin-top: 40px;
   margin-bottom: 6px;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: monospace;
 }
 
 .skills-bar {
   padding-left: 35px;
+  margin-top: -50px;
 }
 
 .skills-bar h3 {
   text-align: center;
+  transform: skewY(5deg);
 }
 
 .progress {
   margin-top: 25px;
   border-radius: 16px !important;
   margin-bottom: 10px;
+  transform: skewY(5deg);
+  background-color: #545a61 !important;
 }
 
 .progress-bar {
   border-radius: 16px;
-  background: #000 !important;
+  background: #9b75f7 !important;
 }
 
 .resume {
   margin-top: -50px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  background: #f9f9f9;
+  padding-top: 10px;
+  padding-bottom: 90px;
+  background: hsl(216deg 100% 95%);
+  transform: skewY(-5deg);
 }
 
 .resume h3 {
@@ -223,6 +332,7 @@ body {
 
 .resume p {
   font-size: 15px;
+  transform: skewY(5deg);
 }
 .timeline {
   list-style-type: none;
@@ -326,7 +436,7 @@ body {
 .contact {
   padding-top: 50px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(img/bg1.jpg);
+    url(img/bg2.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -366,7 +476,6 @@ body {
 }
 
 .footer {
-  background: #000;
   height: 50px;
   margin-top: 50px;
   color: #fff;

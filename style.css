@@ -79,19 +79,19 @@ body {
 @media (max-width: 56.25em) {
   .user-box img {
     border-radius: 25%;
-    width: 450px;
+    width: 250px;
     border: 2px solid #ced4db;
   }
   .user-box h1 {
     color: #fff;
     font-weight: bold;
     margin: 10px;
-    font-size: 100px;
+    font-size: 55px;
   }
 
   .user-box p {
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 
@@ -863,13 +863,13 @@ body {
   }
 }
 
-@media screen and (max-width: 868px) {
+@media (max-width: 868px) {
   .project-post {
     max-width: 70rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .project-post {
     padding: 2.5rem;
     flex-direction: column;

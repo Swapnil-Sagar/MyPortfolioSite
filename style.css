@@ -863,13 +863,13 @@ body {
   }
 }
 
-@media screen and (max-width: 868px) {
+/* @media screen and (max-width: 868px) {
   .project-post {
     max-width: 70rem;
   }
-}
+} */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .project-post {
     padding: 2.5rem;
     flex-direction: column;

@@ -83,7 +83,7 @@ body {
     border: 2px solid #ced4db;
   }
   .user-box h1 {
-    color: #fff;
+    color: rgba(148, 248, 255, 0.9);
     font-weight: bold;
     margin: 10px;
     font-size: 55px;

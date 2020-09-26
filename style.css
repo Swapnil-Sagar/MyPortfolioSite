@@ -160,7 +160,7 @@ body {
 }
 .composition__photo--p2 {
   left: 50%;
-  top: 25vh;
+  top: 150px;
   width: 30%;
 }
 @media (max-width: 56.25em) {
@@ -173,7 +173,7 @@ body {
 }
 .composition__photo--p3 {
   left: 15%;
-  top: 25vh;
+  top: 150px;
   width: 28%;
 }
 @media (max-width: 56.25em) {

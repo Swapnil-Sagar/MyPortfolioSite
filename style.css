@@ -924,3 +924,85 @@ body {
 .projects .btn .fa {
   margin-right: 10px;
 }
+
+/* -----------------------Blog Posts-------------------------- */
+
+.blogcontainer {
+  padding: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.blogcontainer .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.blogcontainer .card:hover {
+  height: 380px;
+}
+
+.blogcontainer .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 145px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blogcontainer .card .imgBx img {
+  max-width: 100%;
+
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.blogcontainer .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 30px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.blogcontainer .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.project-post__cta {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  margin-left: 20px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  border-radius: 0.8rem;
+  text-decoration: none;
+}

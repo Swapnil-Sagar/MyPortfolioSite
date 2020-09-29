@@ -825,7 +825,7 @@ body {
 .project-post {
   margin-top: 6rem;
   margin-left: auto;
-  width: 100%;
+  width: 90%;
   max-width: 98rem;
   padding-right: -4rem;
   padding: 2rem 3rem;
@@ -923,6 +923,8 @@ body {
 @media screen and (max-width: 1068px) {
   .project-post {
     max-width: 80rem;
+    width: 95%;
+    margin-left: 5rem;
   }
 
   .project-post__img {

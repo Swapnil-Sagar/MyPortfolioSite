@@ -1,18 +1,25 @@
-html {
-  overflow-x: hidden;
-}
-
 body {
   margin: 0;
   font-family: sans-serif;
   padding: 0;
-  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
 }
+
+/* ------------------For fixing white sidebar in mobile view-------------> */
+@media (max-width: 56.25em) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
 /* -------------------------------Splash animation--------------------------- */
 .splash {
   position: fixed;
@@ -360,6 +367,30 @@ body {
   margin-right: auto;
 }
 
+/* ----------------Resume BTN------------------- */
+.example_a {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #8ab7cf;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.example_a:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+/* ----------------------------------------------------- */
 .nav-bar {
   top: 0;
   position: sticky;
@@ -367,7 +398,7 @@ body {
 }
 
 .navbar {
-  background-color: hsl(216deg 100% 95%);
+  background-color: hsl(216deg 100% 90%);
   padding: 0 !important;
 }
 
@@ -531,7 +562,7 @@ body {
 }
 
 .services-box:hover {
-  background: #000;
+  background: rgb(18, 18, 53);
   color: #fff;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -942,7 +973,8 @@ body {
 
 .project-post__cta:hover {
   background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
-  text-decoration: none;
+  text-decoration: none !important;
+  color: white;
 }
 
 @media screen and (max-width: 1068px) {
@@ -989,6 +1021,29 @@ body {
   text-align: center;
 }
 
+.container .btn {
+  text-align: center;
+  margin: 5rem auto 0;
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  align-self: start;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+  border-radius: 0.8rem;
+  background: #8ab7cf;
+}
+
+.container .btn:hover {
+  border: 2px solid #000 !important;
+  background: rgb(18, 18, 53) !important;
+  transition: 0.6s;
+}
+
 .projects .btn {
   text-align: center;
   margin: 5rem auto 0;
@@ -1012,7 +1067,7 @@ body {
 
 .projects .btn:hover {
   border: 2px solid #000 !important;
-  background: #000 !important;
+  background: rgb(18, 18, 53) !important;
   transition: 0.6s;
 }
 
@@ -1030,6 +1085,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
+}
+
+#blog {
+  margin-top: 3rem;
 }
 
 .blogcontainer .card {
@@ -1066,14 +1125,20 @@ body {
 }
 
 .title {
-  font-size: 20px;
+  font-size: 30px;
+  margin-top: 10px;
+  border-radius: 10px;
   text-align: center;
+  color: darkblue;
+  font-family: monospace;
+  letter-spacing: 4px;
+  box-shadow: 1px 1px 3px #6c757d;
 }
 
 .blogcontainer .card .content {
   position: relative;
-  margin-top: -140px;
-  padding: 30px 15px;
+  margin-top: -150px;
+  padding: 40px 10px;
   text-align: center;
   color: #111;
   visibility: hidden;

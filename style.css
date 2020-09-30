@@ -62,6 +62,16 @@ body {
   animation: fill 0.5s ease forwards 3s;
 }
 
+@media (max-width: 56.25em) {
+  #splash_logo {
+    max-width: 80%;
+  }
+  .fade-in {
+    margin-left: 40px;
+    width: 50px;
+  }
+}
+
 #splash_logo path:nth-child(1) {
   stroke-dasharray: 493;
   stroke-dashoffset: 493;
@@ -160,7 +170,7 @@ body {
     border: 2px solid #ced4db;
   }
   .user-box h1 {
-    color: rgba(148, 248, 255, 0.9);
+    color: rgba(174, 238, 243, 0.9);
     font-weight: bold;
     margin: 10px;
     font-size: 55px;
@@ -168,7 +178,7 @@ body {
 
   .user-box p {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -407,6 +417,12 @@ body {
   margin-bottom: 10px;
   transform: skewY(5deg);
   background-color: #545a61 !important;
+}
+
+@media (max-width: 56.25em) {
+  .progress {
+    max-width: 90%;
+  }
 }
 
 .progress-bar {

@@ -647,7 +647,7 @@ body {
 
 .social-icons ul li {
   height: 40px;
-  width: 40px;
+  width: 35px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   list-style-type: none;
@@ -655,7 +655,7 @@ body {
   padding-top: 6px;
   margin-top: 5px;
   color: #f1f1f1;
-  background: rgba(0, 0, 0, 0.4);
+  background: #58affb59;
 }
 
 .social-icons ul li:hover {

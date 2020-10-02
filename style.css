@@ -765,7 +765,15 @@ body {
   }
 }
 
-.middle {
+@media (max-width: 56.25em) {
+  #whoami {
+    margin-bottom: 9rem;
+  }
+}
+
+/* ------------------Old Project layout hover turn effect-------------- */
+
+/* .middle {
   position: relative;
   top: 50%;
   left: 50%;
@@ -870,7 +878,7 @@ body {
 
 .projects p {
   margin-bottom: 35px;
-}
+} */
 
 /*--------------New Project-----------------------*/
 

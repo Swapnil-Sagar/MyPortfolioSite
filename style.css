@@ -864,7 +864,7 @@ body {
 
 .card:hover > .back {
   transform: perspective(600px) rotateY(0deg);
-}
+}*/
 
 .projects {
   padding-top: 50px;
@@ -878,7 +878,7 @@ body {
 
 .projects p {
   margin-bottom: 35px;
-} */
+}
 
 /*--------------New Project-----------------------*/
 

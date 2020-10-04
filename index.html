@@ -77,6 +77,7 @@
 
  <!-- -------------------------------------Particle Animation and Top section-------------------------    -->
     <section id="particles-js">
+      
       <div class="container text-center">
         <div class="user-box">
           <img src="img/mepng.png" alt="">
@@ -89,15 +90,19 @@
       <div class="scroll-btn"><a href="#about"></a>
         <div class="scroll-bar"><a href="#about"><span> </span></a>
         </div>
-
       </div>
     </section>
 
     <section id="user-info">
       <div class="nav-bar">
 
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" id="navbar1">
   <a class="navbar-brand" href="#"><img src="img/S-logo-2.png"></a>
+   <!-- ------------------Theme toggle----------------- -->
+     <button onclick="toggleTheme()" id="theme-btn"><span class="theme-svg"></span></button>
+
+      <!-- -------------------------------------------- -->
+   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fa fa-bars"></i>
@@ -136,7 +141,7 @@
       <svg class="hack" viewBox="0 0 806 895" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="allhack">
           <g id="Hacker" clip-path="url(#clip0)">
-            <rect width="797" height="758" transform="translate(9 137)" fill="white"/>
+            <rect width="797" height="758" transform="translate(9 137)" fill="none"/>
             <path id="Vector" d="M587.626 567.135V776.527L622.304 833.607L624.943 837.949H761.772L764.537 567.135H587.626Z" fill="#E6E6E6"/>
             <path id="Vector_2" opacity="0.1" d="M587.626 567.135V776.527L622.304 833.607L624.432 567.135H587.626Z" fill="black"/>
             <path id="Vector_3" d="M257.3 561.55V770.943L222.622 828.024L219.983 832.364H83.1541L80.3894 561.55H257.3Z" fill="#E6E6E6"/>
@@ -493,14 +498,14 @@
 
 </div>-->
 
-  <div class="project-post">
+  <div class="project-post" id="project-post1">
     
     <div class="project-post__img">
       <img src="img/fsw.jpg" alt="">
     </div>
     <div class="project-post__info">
       <h1 class="project-post__title">Full Stack Way</h1>
-      <p class="project-post__text">
+      <p class="project-post__text" id="project_text1">
         A Blog Website for web enthusiasts. It has posts about most of the Web technologies, tools and frameworks for better understanding
         of the Web Dev Ecosystem. Made using GatsbyJS and GraphQL.
 
@@ -513,14 +518,14 @@
     </div>
 
 
-    <div class="project-post">
+    <div class="project-post" id="project-post2">
     
     <div class="project-post__img">
       <img src="img/codedraft.jpg" alt="">
     </div>
     <div class="project-post__info">
       <h1 class="project-post__title">Code draft</h1>
-      <p class="project-post__text">
+      <p class="project-post__text" id="project_text2">
         CodeDraft is a clone of popular CodePen.io which is an online Web Application for testing user-created HTML, CSS and JavaScript code snippets.
          It functions as an online code editor and open-source learning environment,
          where developers can create code snippets and test them. 
@@ -534,14 +539,14 @@
     </div>
 
 
-    <div class="project-post">
+    <div class="project-post" id="project-post3">
     
     <div class="project-post__img">
       <img src="img/et.jpg" alt="">
     </div>
     <div class="project-post__info">
       <h1 class="project-post__title">E-TUCK</h1>
-      <p class="project-post__text">
+      <p class="project-post__text" id="project_text3">
         A food ordering application in Android OS for the college students to order food from the canteen.
          Developed in Android Studio with Java and XML.
 
@@ -578,8 +583,8 @@
 
 <div class="row">
   <div class="col-md-4">
-    <div class="services-box">
-      <i class="fa fa-bug"></i><span> Front End</span>
+    <div class="services-box" id="service1">
+      <i class="fa fa-bug"></i><span>Front End</span>
       <ul>
         <li>HTML5 / CSS3</li>
         <li>JavaScript</li>
@@ -590,7 +595,7 @@
   </div>
 
   <div class="col-md-4">
-    <div class="services-box">
+    <div class="services-box" id="service2">
       <i class="fa fa-code"></i><span> Server</span>
       <ul>
         <li>NodeJS</li>
@@ -602,7 +607,7 @@
   </div>
 
   <div class="col-md-4">
-    <div class="services-box">
+    <div class="services-box" id="service3">
       <i class="fa fa-database"></i><span> DATABASE</span>
       <ul>
         <li>mySQL</li>
@@ -736,5 +741,6 @@
 
 <script type="text/javascript" src="particles.js"></script>
 <script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="toggleTheme.js"></script>
   </body>
 </html>

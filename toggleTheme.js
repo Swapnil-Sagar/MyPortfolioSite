@@ -1,0 +1,30 @@
+function toggleTheme() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  // var element = document.querySelector(".navbar");
+  // element.classList.toggle("dark-navbar");
+  var element = document.querySelector("#theme-btn");
+  element.classList.toggle("dark-btn");
+  var element = document.querySelector(".resume");
+  element.classList.toggle("dark-resume-tool");
+  var element = document.querySelector(".services");
+  element.classList.toggle("dark-resume-tool");
+  var element = document.querySelector("#project-post1");
+  element.classList.toggle("dark-project");
+  var element = document.querySelector("#project-post2");
+  element.classList.toggle("dark-project");
+  var element = document.querySelector("#project-post3");
+  element.classList.toggle("dark-project");
+  var element = document.querySelector("#project_text1");
+  element.classList.toggle("dark-project-text");
+  var element = document.querySelector("#project_text2");
+  element.classList.toggle("dark-project-text");
+  var element = document.querySelector("#project_text3");
+  element.classList.toggle("dark-project-text");
+  var element = document.querySelector("#service1");
+  element.classList.toggle("dark-services-box");
+  var element = document.querySelector("#service2");
+  element.classList.toggle("dark-services-box");
+  var element = document.querySelector("#service3");
+  element.classList.toggle("dark-services-box");
+}

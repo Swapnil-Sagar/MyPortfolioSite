@@ -883,12 +883,9 @@ body {
 .skills1 ul li {
   list-style-type: none;
   float: left;
-  /* margin-left: 10px;
-  padding-left: 15px; */
-  margin: 0 10px;
+  margin: 5px 5px;
   padding: 0 10px;
-
-  background-color: rgba(7, 218, 255, 0.336);
+  background-color: rgba(7, 218, 255, 0.267);
   border-radius: 5px;
 }
 .skills1 {
